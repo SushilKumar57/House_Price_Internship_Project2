@@ -40,38 +40,45 @@ div {text-align: center;}
 <form action="{{ url_for('predict')}}"method="get">
 <div class="form-floating mb-3">
 
-<input type="number" class="form-control" id="exp" name="exp" step="any" min="0" max="10000" placeholder="0" required="required">
+<input type="number" class="form-control" id="exp" name="exp1" step="any" min="0" max="10000" placeholder="0" required="required">
 <label for="floatingInput">Enter the Sqft of Area</label>
 </div>
 <br>
 
 <div class="form-floating mb-3">
-<input type="number" class="form-control" id="exp" name="exp" step="any" min="0" max="10" placeholder="0" required="required">
+<input type="number" class="form-control" id="exp" name="exp2" step="any" min="0" max="10" placeholder="0" required="required">
 <label for="floatingInput">Enter number of Bedrooms</label>
 </div>
 <br>
 
 <div class="form-floating mb-3">
-<input type="number" class="form-control" id="exp" name="exp" step="any" min="0" max="10" placeholder="0" required="required">
+<input type="number" class="form-control" id="exp" name="exp3" step="any" min="0" max="10" placeholder="0" required="required">
 <label for="floatingInput">Enter number of Bathrooms</label>
 </div>
 <br>
 
 <div class="form-floating mb-3">
-<input type="number" class="form-control" id="exp" name="exp" step="any" min="0" max="10" placeholder="0" required="required">
+<input type="number" class="form-control" id="exp" name="exp4" step="any" min="0" max="10" placeholder="0" required="required">
 <label for="floatingInput">Enter number of Offers</label>
 </div>
 <br>
 
 <div class="form-floating mb-3">
-<input type="number" class="form-control" id="exp" name="exp" step="any" min="0" max="1" placeholder="0" required="required">
-<label for="floatingInput">Enter 1 if brick is available or 0 if not</label>
+<select class="form-control" name="exp5" id="exp" required="required">
+<option value="">--Select whether Brick is available--</option>
+<option value="0">No</option>
+<option value="1">Yes</option>>
+</select>
 </div>
 <br>
 
 <div class="form-floating mb-3">
-<input type="number" class="form-control" id="exp" name="exp" step="any" min="0" max="2" placeholder="0" required="required">
-<label for="floatingInput">Enter the Neighborhood either 0 for east or 1 for north or 2 for west</label>
+<select class="form-control" name="exp6" id="exp" required="required">
+<option value="">--Select the Neighborhood--</option>
+<option value="0">East</option>
+<option value="1">North</option>>
+<option value="2">West</option>
+</select>
 </div>
 <br>
 
